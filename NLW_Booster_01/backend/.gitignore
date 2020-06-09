@@ -1,0 +1,5 @@
+node_modules
+src/database/database.sqlite
+temp/*
+uploads/*.jpg
+uploads/*.png
