@@ -21,3 +21,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+- [Knex](http://knexjs.org/)
