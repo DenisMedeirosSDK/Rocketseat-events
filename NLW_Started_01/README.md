@@ -1,6 +1,6 @@
 # Ecoleta - Aplicação Full MVC 🧠 🖥
 
-![thumbnail](https://raw.githubusercontent.com/DenisMedeirosSDK/NLW_Started_01/master/.github/thumbnail.jpg)
+![thumbnail](./.github/thumbnail.jpg)
  
 ## Tecnologias usadas para construção ⛏
 
