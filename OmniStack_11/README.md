@@ -1,9 +1,9 @@
-![Be-the-hero](https://raw.githubusercontent.com/DenisMedeirosSDK/OmniStack_11/master/.github/assets/logo.png)
+![Be-the-hero](./.github/assets/logo.png)
 
 ## 👊 Be The Hero
 Construido na semana Omnistack 11, desenvolvido por [Rocketseat](https://rocketseat.com.br/).
 
-![BetheHero](https://raw.githubusercontent.com/DenisMedeirosSDK/OmniStack_11/master/.github/assets/backGround_BeTheHero.jpg)
+![BetheHero](./.github/assets/backGround_BeTheHero.jpg)
 
 ## 💻 Projeto
 
