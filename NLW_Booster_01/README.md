@@ -1,6 +1,6 @@
 # Ecoleta - Next Level Week 01 🌳
 
-![Thumbnail](https://raw.githubusercontent.com/DenisMedeirosSDK/NLW_Booster_01/master/.github/Background.png)
+![Thumbnail](./.github/Background.png)
 
 ## Projeto 🗃
 
