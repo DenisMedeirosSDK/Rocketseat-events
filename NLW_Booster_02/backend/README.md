@@ -12,7 +12,7 @@ A porta usada é 3333 mas pode ser modificada em `src/server.ts`
   server.listen(3333)
 ```
 
-Rotas disponiveis ✔
+### Rotas disponiveis ✔
 
 * POST `/classes` Criar usuario, categoria e agenda
 
@@ -26,3 +26,8 @@ Rotas disponiveis ✔
 * POST `/connections` Cria uma conexão do usuario
 
 * GET `/connections` Lista um total de conexão
+
+
+### Debug
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=NLW%2002&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDenisMedeirosSDK%2FRocketseat-events%2Fmaster%2FNLW_Booster_02%2F.github%2FInsomnia_2020-08-04.json)
