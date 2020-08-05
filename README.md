@@ -2,7 +2,10 @@
  
 <p align="center">Este é um repositorio de estudos, com projetos desenvolvido do zero junto com rocketseat</p>
 
-### projetos
+<p align="center">Cada Projeto tem seu README com as instruções de execução e imagens do projeto concluido</p>
+
+
+### Projetos 💡
 
 - [x] AirCnC - Omnistack 09
 - [x] DevRadar - Omnistack 10
