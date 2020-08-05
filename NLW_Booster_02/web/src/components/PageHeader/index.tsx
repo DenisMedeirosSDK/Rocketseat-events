@@ -8,9 +8,10 @@ import './styles.css'
 
 interface IPageHeader {
   title: string;
+  description?:string;
 }
 
-const PageHeader:React.FC<IPageHeader> = ({ title, children }) => {
+const PageHeader:React.FC<IPageHeader> = ({ title, children, description }) => {
   return(
     <header className="page-header">
         <div className="top-bar-container">
@@ -22,6 +23,7 @@ const PageHeader:React.FC<IPageHeader> = ({ title, children }) => {
 
         <div className="header-content">
           <strong>{title}</strong>
+          {description && <p>{description}</p>}
           {children}
         </div>
       </header>
