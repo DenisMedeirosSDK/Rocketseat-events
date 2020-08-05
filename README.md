@@ -4,11 +4,11 @@
 
 ### projetos
 
-- [x] AirCnC
-- [x] DevRadar
-- [x] Be The Hero
-- [x] Ecoleta
-- [x] Ecoleta - Basic
+- [x] AirCnC - Omnistack 09
+- [x] DevRadar - Omnistack 10
+- [x] Be The Hero - Omnistack 11
+- [x] Ecoleta - NLW 01
+- [x] Ecoleta - Basic - NLW 01
 
 
 ### 🛠 Tecnologias
