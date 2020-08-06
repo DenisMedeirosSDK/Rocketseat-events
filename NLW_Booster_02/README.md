@@ -2,7 +2,7 @@
 
 Proffy é uma plataforma de estudo online onde você pode escolher dar aula ou estudar a distancia, construida na semana da NLW 2 ♥ [Rocketseat](https://rocketseat.com.br/)
 
-![Capa](./.github/assets/Capa.png)
+![Capa](./.github/assets/ProffyCapa.png)
 
 
 ## Tecnologias 🦾
