@@ -12,6 +12,7 @@
 - [x] Be The Hero - Omnistack 11
 - [x] Ecoleta - NLW 01
 - [x] Ecoleta - Basic - NLW 01
+- [x] Proffy - NLW 02
 
 
 ### 🛠 Tecnologias
