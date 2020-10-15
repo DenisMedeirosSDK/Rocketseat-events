@@ -93,7 +93,7 @@ export default {
 
     const orphanagesRepository = getRepository(Orphanage);
 
-    const orphanage = await orphanagesRepository.delete(id);
+    await orphanagesRepository.delete(id);
 
     return response.send();
   },

@@ -3,6 +3,7 @@ import cors from "cors";
 import routes from "./routes";
 import path from "path";
 
+import "dotenv";
 import "express-async-errors";
 import "./database/connection";
 
