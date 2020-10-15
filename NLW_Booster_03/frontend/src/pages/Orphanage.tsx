@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { FiClock, FiInfo } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 
-import "../styles/pages/orphanage.css";
 import Sidebar from "../components/Sidebar";
 import mapIcon from "../utils/mapIcon";
 import api from "../services/api";
+
+import "../styles/pages/orphanage.css";
 
 interface IOrphanage {
   name: string;
@@ -134,10 +134,10 @@ export default function Orphanage() {
               )}
             </div>
 
-            <button type="button" className="contact-button">
+            {/* <button type="button" className="contact-button">
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
-            </button>
+              </button>*/}
           </div>
         </div>
       </main>
