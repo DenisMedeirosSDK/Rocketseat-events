@@ -1,11 +1,11 @@
-# Ecoleta - Next Level Week 01 🌳
+# Happy - Next Level Week 03
 
 ![Thumbnail](./.github/Background.png)
 
 ## Projeto 🗃
 
-Esta aplicação tem como objetivo de ajudar as pessoas acharem pontos de despejo
-de residuos, para melhorar nosso meio ambiente.
+Esta aplicação tem como objetivo de ajudar as crianças de orfanatos a encontrar uma pessoa de bom coração
+para fazer uma visita e dar amor a todas crianças.
 
 ## Tecnologias 🦾
 
@@ -14,6 +14,7 @@ de residuos, para melhorar nosso meio ambiente.
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 - [Typescript](https://www.typescriptlang.org/)
+- [TypeORM](https://typeorm.io/#/)
 
 ## Contribuição 🔧
 

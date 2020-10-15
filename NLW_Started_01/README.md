@@ -1,16 +1,16 @@
 # Ecoleta - Aplicação Full MVC 🧠 🖥
 
 ![thumbnail](./.github/thumbnail.jpg)
- 
+
 ## Tecnologias usadas para construção ⛏
 
-* [Node](https://nodejs.org/en/)
-* [Express](https://expressjs.com/pt-br/)
-* [Nunjucks](https://mozilla.github.io/nunjucks/)
-* [Javascript](https://www.javascript.com/)
-* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-* [SQLite3](https://www.sqlite.org/index.html)
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [Javascript](https://www.javascript.com/)
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [SQLite3](https://www.sqlite.org/index.html)
 
 ## Procedimento para execução 🛠
 
@@ -26,21 +26,22 @@ Execute os seguintes comandos:
 
 ### Rotas disponiveis
 
-* *http://localhost:3000/*
+- _http://localhost:3000/_
 
-* *http://localhost:3000/search*
+- _http://localhost:3000/search_
 
-* *http://localhost:3000/createpoint*
+- _http://localhost:3000/createpoint_
 
-* *http://localhost:3000/savepoint* -> apenas com o envio do formulario no frontend.
+- _http://localhost:3000/savepoint_ -> apenas com o envio do formulario no frontend.
 
 Caso sua porta **3000** esteja sendo usado mude no arquivo `src/server.js`
 
 ```js
-  server.listen(3000);
+server.listen(3000);
 ```
 
 Caso queira inserir/deletar ou selecionar um dado no banco de dados via backend basta ir no arquivo `src/database/example-db.js` copiar o exemplo que queira e colar no arquivo `src/database/db.js` subistituindo o outro comando existente depois execute o comando `node src/database`
 
-## Licença
-Esse projeto está so a licença MIT. Veja o arquivo [LICENSE](https://raw.githubusercontent.com/DenisMedeirosSDK/NLW_Started_01/master/LICENSE) para mais detalhes.
+## Licença 📝
+
+Esse projeto está so a licença MIT. Veja o arquivo [LICENSE](https://raw.githubusercontent.com/DenisMedeirosSDK/Rocketseat-events/master/LICENSE) para mais detalhes.
