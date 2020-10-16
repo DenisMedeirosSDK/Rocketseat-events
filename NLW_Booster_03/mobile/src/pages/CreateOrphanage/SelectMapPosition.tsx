@@ -11,7 +11,10 @@ import mapMarkerImg from '../../images/map-marker.png';
 export default function SelectMapPosition() {
   const navigation = useNavigation();
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
-  const [initialRegion, setInitialRegion] = useState<[number, number]>([0, 0]);
+  const [initialPosition, setInitialPosition] = useState<[number, number]>([
+    0,
+    0,
+  ]);
 
   function handleNextStep() {
     navigation.navigate('OrphanageData', { position });
@@ -22,26 +25,21 @@ export default function SelectMapPosition() {
 
   useEffect(() => {
     async function loadPosition() {
-      const { status } = await Location.requestPermissionsAsync();
-
-      if (status !== 'granted') {
-        alert('Precisamos de sua permição para obter a localização');
-        return;
-      }
       const location = await Location.getCurrentPositionAsync();
+
       const { latitude, longitude } = location.coords;
 
-      setInitialRegion([latitude, longitude]);
+      setInitialPosition([latitude, longitude]);
     }
     loadPosition();
-  }, [initialRegion]);
+  });
 
   return (
     <View style={styles.container}>
       <MapView
         initialRegion={{
-          latitude: initialRegion[0],
-          longitude: initialRegion[1],
+          latitude: initialPosition[0],
+          longitude: initialPosition[1],
           latitudeDelta: 0.008,
           longitudeDelta: 0.008,
         }}
