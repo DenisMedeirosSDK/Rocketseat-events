@@ -13,7 +13,7 @@
 - [x] Ecoleta - NLW 01
 - [x] Ecoleta - Basic - NLW 01
 - [x] Proffy - NLW 02
-
+- [x] Happy - NLW 03
 
 ### 🛠 Tecnologias
 
