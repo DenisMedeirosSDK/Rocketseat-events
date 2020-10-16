@@ -1,5 +1,5 @@
-import Orphanage from "../models/Orphanage";
-import imagesView from "../views/images_view";
+import Orphanage from '../models/Orphanage';
+import imagesView from '../views/images_view';
 
 export default {
   render(orphanage: Orphanage) {
@@ -17,6 +17,6 @@ export default {
   },
 
   renderMany(orphanage: Orphanage[]) {
-    return orphanage.map((orphanage) => this.render(orphanage));
+    return orphanage.map(orphanage => this.render(orphanage));
   },
 };
