@@ -4,18 +4,18 @@ import {
   PrimaryGeneratedColumn,
   ManyToOne,
   JoinColumn,
-} from "typeorm";
-import Orphanage from "./Orphanage";
+} from 'typeorm';
+import Orphanage from './Orphanage';
 
-@Entity("images")
+@Entity('images')
 export default class Image {
-  @PrimaryGeneratedColumn("increment")
+  @PrimaryGeneratedColumn('increment')
   id: number;
 
   @Column()
   path: string;
 
-  @ManyToOne(() => Orphanage, (orphanage) => orphanage.images)
-  @JoinColumn({ name: "orphanage_id" })
+  @ManyToOne(() => Orphanage, orphanage => orphanage.images)
+  @JoinColumn({ name: 'orphanage_id' })
   orphanage: Orphanage;
 }

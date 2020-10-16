@@ -1,58 +1,58 @@
-import { MigrationInterface, QueryRunner, Table } from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class createOrphanages1602588937902 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
-        name: "orphanages",
+        name: 'orphanages',
         columns: [
           {
-            name: "id",
-            type: "uuid",
+            name: 'id',
+            type: 'uuid',
             unsigned: true,
             isPrimary: true,
             isUnique: true,
-            generationStrategy: "uuid",
+            generationStrategy: 'uuid',
           },
           {
-            name: "name",
-            type: "varchar",
+            name: 'name',
+            type: 'varchar',
           },
           {
-            name: "latitude",
-            type: "decimal",
+            name: 'latitude',
+            type: 'decimal',
             scale: 10,
             precision: 2,
           },
           {
-            name: "longitude",
-            type: "decimal",
+            name: 'longitude',
+            type: 'decimal',
             scale: 10,
             precision: 2,
           },
           {
-            name: "about",
-            type: "text",
+            name: 'about',
+            type: 'text',
           },
           {
-            name: "instructions",
-            type: "text",
+            name: 'instructions',
+            type: 'text',
           },
           {
-            name: "opening_hours",
-            type: "varchar",
+            name: 'opening_hours',
+            type: 'varchar',
           },
           {
-            name: "open_on_weekends",
-            type: "boolean",
+            name: 'open_on_weekends',
+            type: 'boolean',
             default: false,
           },
         ],
-      })
+      }),
     );
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable("orphanages");
+    await queryRunner.dropTable('orphanages');
   }
 }

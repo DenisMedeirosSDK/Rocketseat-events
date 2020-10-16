@@ -1,10 +1,10 @@
-import { Request, Response } from "express";
-import { getRepository } from "typeorm";
-import { v4 } from "uuid";
-import * as Yup from "yup";
+import { Request, Response } from 'express';
+import { getRepository } from 'typeorm';
+import { v4 } from 'uuid';
+import * as Yup from 'yup';
 
-import Orphanage from "../models/Orphanage";
-import orphanageView from "../views/orphanages_view";
+import Orphanage from '../models/Orphanage';
+import orphanageView from '../views/orphanages_view';
 
 export default {
   async show(request: Request, response: Response) {
@@ -13,7 +13,7 @@ export default {
     const orphanagesRepository = getRepository(Orphanage);
 
     const orphanage = await orphanagesRepository.findOneOrFail(id, {
-      relations: ["images"],
+      relations: ['images'],
     });
 
     return response.json(orphanageView.render(orphanage));
@@ -23,7 +23,7 @@ export default {
     const orphanagesRepository = getRepository(Orphanage);
 
     const orphanages = await orphanagesRepository.find({
-      relations: ["images"],
+      relations: ['images'],
     });
 
     return response.json(orphanageView.renderMany(orphanages));
@@ -44,7 +44,7 @@ export default {
 
     const requestImages = request.files as Express.Multer.File[];
 
-    const images = requestImages.map((image) => {
+    const images = requestImages.map(image => {
       return {
         path: image.filename,
       };
@@ -73,7 +73,7 @@ export default {
       images: Yup.array(
         Yup.object().shape({
           path: Yup.string().required(),
-        })
+        }),
       ),
     });
 

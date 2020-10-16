@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { LeafletMouseEvent } from "leaflet";
 import { useHistory } from "react-router-dom";
@@ -14,7 +14,10 @@ import "../styles/pages/create-orphanage.css";
 export default function OrphanagesMap() {
   const history = useHistory();
 
-  const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
+  const [markerPosition, setmarkerPosition] = useState({
+    latitude: 0,
+    longitude: 0,
+  });
 
   const [name, setName] = useState("");
   const [about, setAbout] = useState("");
@@ -24,14 +27,21 @@ export default function OrphanagesMap() {
   const [images, setImages] = useState<File[]>([]);
   const [previewImages, setPreviewImages] = useState<string[]>([]);
 
+  const [position, setPosition] = useState<[number, number]>([0, 0]);
+
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition()
-  },[])
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { latitude, longitude } = position.coords;
+
+      setPosition([latitude, longitude]);
+      console.log(setPosition);
+    });
+  }, []);
 
   function handleMapClick(event: LeafletMouseEvent) {
     const { lat, lng } = event.latlng;
 
-    setPosition({
+    setmarkerPosition({
       latitude: lat,
       longitude: lng,
     });
@@ -56,7 +66,7 @@ export default function OrphanagesMap() {
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
-    const { latitude, longitude } = position;
+    const { latitude, longitude } = markerPosition;
 
     const data = new FormData();
 
@@ -88,7 +98,7 @@ export default function OrphanagesMap() {
             <legend>Dados</legend>
 
             <Map
-              center={[-23.444692, -47.4897818]}
+              center={[position[0], position[1]]}
               style={{ width: "100%", height: 280 }}
               zoom={15}
               onClick={handleMapClick}
@@ -97,11 +107,11 @@ export default function OrphanagesMap() {
                 url={`https://a.tile.openstreetmap.org/{z}/{x}/{y}.png`}
               />
 
-              {position.latitude !== 0 && (
+              {markerPosition.latitude !== 0 && (
                 <Marker
                   interactive={false}
                   icon={mapIcon}
-                  position={[position.latitude, position.longitude]}
+                  position={[markerPosition.latitude, markerPosition.longitude]}
                 />
               )}
             </Map>
