@@ -17,9 +17,9 @@ Este projeto tem como objetivo criar um serviço de envios de email para pesquis
 - [Jest](https://jestjs.io/)
 - [handlebars](https://handlebarsjs.com/)
 
-Para ajudar no debug da aplicação foi usado o insomnia, para obter o projeto completo [clique aqui](https://insomnia.rest/run/?label=OmniStack11&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDenisMedeirosSDK%2FOmniStack_11%2Fmaster%2F.github%2FInsomnia_OmniStack_11.json")
+Para ajudar no debug da aplicação foi usado o insomnia, para obter o projeto completo [clique aqui](https://insomnia.rest/run/?label=NPS-NLW4&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDenisMedeirosSDK%2FRocketseat-events%2Fmaster%2FNLW_Booster_04%2F.github%2FNLW_4_Node_Insomnia.json")
 
-<a href="https://insomnia.rest/run/?label=OmniStack11&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDenisMedeirosSDK%2FOmniStack_11%2Fmaster%2F.github%2FInsomnia_OmniStack_11.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+<a href="https://insomnia.rest/run/?label=NPS-NLW4&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDenisMedeirosSDK%2FRocketseat-events%2Fmaster%2FNLW_Booster_04%2F.github%2FNLW_4_Node_Insomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 
 ## 🤯 Oque eu aprendi
 
@@ -39,12 +39,15 @@ Este projeto tem como objetivo criar um sistema de desafios com next.js
 - [Typescript](https://www.typescriptlang.org/)
 - [Next](https://nextjs.org/)
 - [React](https://reactjs.org/)
+- Cookie
 
 Para visualizar todas as telas criadas [clique aqui](https://www.figma.com/file/tWgh2y2O8574kiB5nzgC2m/Move.it-1.0?node-id=160%3A2761)
 
 ## 🤯 Oque eu aprendi
 
--
+- React context
+- Armazenamento em cookie
+- CSS module no Next.js
 
 #
 
