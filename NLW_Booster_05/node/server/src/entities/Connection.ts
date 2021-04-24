@@ -13,12 +13,12 @@ export class Connection {
   @Column()
   socket_id: string
 
+  @Column()
+  user_id: string
+
   @JoinColumn({ name: 'user_id' })
   @ManyToOne(() => User)
   user: User
-
-  @Column()
-  user_id: string
 
   @CreateDateColumn()
   created_at: Date

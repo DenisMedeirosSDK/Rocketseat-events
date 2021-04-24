@@ -25,7 +25,7 @@ export class UsersService {
   }
 
   async findByEmail(email: string) {
-    const user = this.usersRepository.findOne(email)
+    const user = this.usersRepository.findOne({ email })
 
     return user
   }
