@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# 💼 Letmeask - NLW 06
+
+![thumbnail](./.github/thumbnail.png)
+
+## 📝 Projeto
+
+Crie uma sala e compartilhe com as pessoas para que possam fazer perguntas sobre o tema.
+
+## 🛠 Tecnologia
+
+1. React
+2. Firebase
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
