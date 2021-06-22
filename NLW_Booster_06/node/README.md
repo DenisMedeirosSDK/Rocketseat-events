@@ -12,7 +12,7 @@ O NLW Valoriza é uma aplicação que tem por objetivo a valorização do colega
 _Código dos desafios_
 
 1. #together
-2.
+2. #unidade
 3.
 4.
 5.
