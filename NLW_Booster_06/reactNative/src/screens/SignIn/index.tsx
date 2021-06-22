@@ -1,13 +1,19 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { View, Image, Text } from "react-native";
-import { styles } from "./styles";
 
 import IllustrationImg from "../../assets/illustration.png";
 import { ButtonIcon } from "../../components/ButtonIcon";
 
+import { styles } from "./styles";
+
 export function SignIn() {
-  const [text, setText] = useState("");
+  const navigation = useNavigation();
+
+  function handleSignIn() {
+    navigation.navigate("Home");
+  }
   return (
     <View style={styles.container}>
       <Image
@@ -18,13 +24,13 @@ export function SignIn() {
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize suas jogatinas {"\n"} facilmente
+          Conecte-se e organize suas {"\n"} jogatinas
         </Text>
         <Text style={styles.subTitle}>
           Crie grupos para jogar seus games {"\n"}
           favoritos com seus amigos
         </Text>
-        <ButtonIcon title="Entrar com discord" activeOpacity={0.7} />
+        <ButtonIcon onPress={handleSignIn} title="Entrar com discord" />
       </View>
     </View>
   );

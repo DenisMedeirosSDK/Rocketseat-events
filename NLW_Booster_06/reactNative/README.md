@@ -10,5 +10,6 @@ Agende uma partida com um amigo em um servidor do discord.
 
 ## 🛠 Tecnologias
 
-1. React
-2. Expo
+1. Typescript
+2. React
+3. Expo
