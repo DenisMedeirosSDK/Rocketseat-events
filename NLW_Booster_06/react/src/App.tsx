@@ -1,15 +1,21 @@
 import React from "react";
-import { Button } from "./components/Button";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import { AuthContextProvider } from "./contetxs/AuthContext";
+
+import { Home } from "./pages/Home";
+import { NewRoom } from "./pages/NewRoom";
+
+import "./styles/global.scss";
 
 function App() {
   return (
-    <div>
-      <Button text="Entrar" />
-      <Button text="Entrar" />
-      <Button text="Entrar" />
-      <Button text="Entrar" />
-      <Button text="Entrar" />
-    </div>
+    <BrowserRouter>
+      <AuthContextProvider>
+        <Route component={Home} exact path="/" />
+        <Route component={NewRoom} exact path="/room/new" />
+      </AuthContextProvider>
+    </BrowserRouter>
   );
 }
 

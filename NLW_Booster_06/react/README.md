@@ -8,8 +8,10 @@ Crie uma sala e compartilhe com as pessoas para que possam fazer perguntas sobre
 
 ## 🛠 Tecnologia
 
-1. React
-2. Firebase
+1. Typescript
+2. React
+3. Firebase
+4. SASS
 
 ---
 
