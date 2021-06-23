@@ -1,19 +1,20 @@
-import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import { AuthContextProvider } from "./contetxs/AuthContext";
+import { AuthContextProvider } from "./contexts/AuthContext";
 
 import { Home } from "./pages/Home";
 import { NewRoom } from "./pages/NewRoom";
-
-import "./styles/global.scss";
+import { Room } from "./pages/Room";
 
 function App() {
   return (
     <BrowserRouter>
       <AuthContextProvider>
-        <Route component={Home} exact path="/" />
-        <Route component={NewRoom} exact path="/room/new" />
+        <Switch>
+          <Route component={Home} exact path="/" />
+          <Route component={NewRoom} path="/rooms/new" />
+          <Route component={Room} path="/rooms/:id" />
+        </Switch>
       </AuthContextProvider>
     </BrowserRouter>
   );
