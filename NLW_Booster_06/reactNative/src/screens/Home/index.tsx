@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { View, FlatList, Text } from "react-native";
+import { View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { Appointments } from "../../components/Appointments";
@@ -44,6 +44,45 @@ export function Home() {
       description:
         "É hoje que vamos chegar ao challenger sem perder uma partida da md10",
     },
+    {
+      id: "3",
+      guild: {
+        id: "1",
+        name: "Lendarios",
+        icon: null,
+        owner: true,
+      },
+      category: "1",
+      date: "22/06 às 20:00h",
+      description:
+        "É hoje que vamos chegar ao challenger sem perder uma partida da md10",
+    },
+    {
+      id: "4",
+      guild: {
+        id: "1",
+        name: "Lendarios",
+        icon: null,
+        owner: true,
+      },
+      category: "1",
+      date: "22/06 às 20:00h",
+      description:
+        "É hoje que vamos chegar ao challenger sem perder uma partida da md10",
+    },
+    {
+      id: "5",
+      guild: {
+        id: "1",
+        name: "Lendarios",
+        icon: null,
+        owner: true,
+      },
+      category: "1",
+      date: "22/06 às 20:00h",
+      description:
+        "É hoje que vamos chegar ao challenger sem perder uma partida da md10",
+    },
   ];
 
   function handleAppointmentDetails() {
@@ -70,20 +109,18 @@ export function Home() {
         hasCheckBox={true}
       />
 
-      <View style={styles.content}>
-        <ListHeader title="Partidas agendadas" subtitle="Total 6" />
-
-        <FlatList
-          data={appointments}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Appointments onPress={handleAppointmentDetails} data={item} />
-          )}
-          ItemSeparatorComponent={() => <ListDivider />}
-          style={styles.matches}
-          showsVerticalScrollIndicator={false}
-        />
-      </View>
+      <ListHeader title="Partidas agendadas" subtitle="Total 6" />
+      <FlatList
+        data={appointments}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <Appointments onPress={handleAppointmentDetails} data={item} />
+        )}
+        ItemSeparatorComponent={() => <ListDivider />}
+        style={styles.matches}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 69 }}
+      />
     </Background>
   );
 }
