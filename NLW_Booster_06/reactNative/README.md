@@ -13,3 +13,4 @@ Agende uma partida com um amigo em um servidor do discord.
 1. Typescript
 2. React
 3. Expo
+4. OAuth2 - Discord

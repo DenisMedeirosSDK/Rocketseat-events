@@ -1,9 +1,8 @@
 <h1 align="center" >Rocketseat Events</h1>
  
-<p align="center">Este é um repositorio de estudos, com projetos desenvolvido do zero junto com rocketseat</p>
+<p align="center">Este é um repositório de estudos, com projetos desenvolvido do zero junto com rocketseat</p>
 
-<p align="center">Cada Projeto tem seu README com as instruções de execução e imagens do projeto concluido</p>
-
+<p align="center">Cada Projeto tem seu README com as instruções de execução e imagens do projeto concluído</p>
 
 ### Projetos 💡
 
@@ -19,27 +18,37 @@
 - [x] Chat - NLW 05 - Trilha NodeJS
 - [x] Podcastr - NLW 05 - Trilha React
 - [x] PlantManager - NLW 05 - Trilha React Native
+- [x] Valoriza - NLW 06 - Trilha NodeJS
+- [x] Letmeask - NLW 06 - Trilha React
+- [x] Gameplay - NLW 06 - Trilha React Native
 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção dos projetos:
 
 ### Linguagens
+
 - [TypeScript](https://www.typescriptlang.org/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ### Backend
+
 - [Node.js](https://nodejs.org/en/)
 - [Express](http://expressjs.com/)
 - [Knex](http://knexjs.org/)
 - [Jest](https://jestjs.io/pt-BR/)
 - [TypeORM](https://typeorm.io/#/)
+- [Firebase](https://firebase.google.com/?hl=pt)
 
 ### Mobile
+
 - [Expo](https://expo.io/)
 - [React Native](https://reactnative.dev/)
 
 ### Web
+
 - [React](https://pt-br.reactjs.org/)
 - [NextJs](https://nextjs.org/)
 - [Create React App](https://create-react-app.dev/docs/getting-started/)
