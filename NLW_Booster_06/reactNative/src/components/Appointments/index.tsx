@@ -13,7 +13,7 @@ import CalendarSvg from "../../assets/calendar.svg";
 
 import { styles } from "./styles";
 
-type AppointmentsProps = {
+export type AppointmentsProps = {
   id: string;
   guild: GuildProps;
   category: string;
@@ -37,7 +37,7 @@ export function Appointments({ data, ...rest }: Props) {
           style={styles.guildIconContainer}
           colors={[secondary50, secondary70]}
         >
-          <GuildIcon />
+          <GuildIcon guildId={data.guild.id} iconId={data.guild.icon} />
         </LinearGradient>
         <View style={styles.content}>
           <View style={styles.header}>

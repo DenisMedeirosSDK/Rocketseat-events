@@ -11,8 +11,12 @@ import {
 import { Routes } from "./src/routes";
 import { Background } from "./src/components/Background";
 import { AuthProvider } from "./src/hooks/auth";
+// import { COLLECTION_APPOINTMENTS } from "./src/config/database";
+
+// import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
+  // AsyncStorage.removeItem(COLLECTION_APPOINTMENTS);
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_500Medium,
