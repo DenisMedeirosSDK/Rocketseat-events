@@ -44,8 +44,6 @@ Este projeto tem como objetivo criar um sistema de agendamento, para jogadores e
 - [Expo](https://expo.io/)
 - [OAuth2 - Discord](https://discord.com/developers/docs/intro)
 
-Para visualizar todas as telas criadas [clique aqui](https://www.figma.com/file/tWgh2y2O8574kiB5nzgC2m/Move.it-1.0?node-id=160%3A2761)
-
 ## 🤯 Novos aprendizados
 
 - OAuth2 - Discord
