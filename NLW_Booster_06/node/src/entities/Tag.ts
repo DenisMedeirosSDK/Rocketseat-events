@@ -5,7 +5,7 @@ import {
   PrimaryColumn,
   UpdateDateColumn,
 } from "typeorm";
-
+import { Expose } from "class-transformer";
 import { v4 as uuidV4 } from "uuid";
 
 @Entity("tags")
@@ -16,6 +16,10 @@ class Tag {
   @Column()
   name: string;
 
+  @Expose({ name: "nameCustom" })
+  nameCustom(): string {
+    return `#${this.name}`;
+  }
   @CreateDateColumn()
   created_at: Date;
 
