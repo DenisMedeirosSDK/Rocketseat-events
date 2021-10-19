@@ -1,0 +1,166 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-10-19T16:06:11.044Z",
+  "__export_source": "insomnia.desktop.app:v2021.4.1",
+  "resources": [
+    {
+      "_id": "req_b12da81f3820440f8490bfca34a883fb",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634652651286,
+      "created": 1634652621618,
+      "url": "{{ _.baseURL }}/profile",
+      "name": "Profile",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{% response 'body', 'req_995fac4851e6462789191d5486ab31a2', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+      },
+      "metaSortKey": -1634652621618,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "parentId": null,
+      "modified": 1634647746164,
+      "created": 1634647746164,
+      "name": "NLW_07",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_d56d5a305de94ac58fb829fcb009e126",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634652937556,
+      "created": 1634652293947,
+      "url": "{{ _.baseURL }}/messages/last3",
+      "name": "Get Last 3 menssages",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1634652294005,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2929d356264d4e1bae6958c42c3c37c8",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634659524736,
+      "created": 1634650468758,
+      "url": "{{ _.baseURL }}/messages",
+      "name": "Create Messages",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"message\": \"Nova menssagem\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_69601470590045899af2eb63bf6a9161"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{% response 'body', 'req_995fac4851e6462789191d5486ab31a2', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+      },
+      "metaSortKey": -1634650468759,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_995fac4851e6462789191d5486ab31a2",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634659511411,
+      "created": 1634647788606,
+      "url": "{{ _.baseURL }}/authenticate",
+      "name": "Create Auth User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"code\": \"ID do github -> http://localhost:3333/github\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_f61fa51cf8d9499cb92d317a82c81dff"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1634647788606,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_ac9fa05e230461067843f47ce94749e389ad08e4",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634647773544,
+      "created": 1634647746320,
+      "name": "Base Environment",
+      "data": { "baseURL": "http://localhost:3333" },
+      "dataPropertyOrder": { "&": ["baseURL"] },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1634647746320,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_ac9fa05e230461067843f47ce94749e389ad08e4",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634647746324,
+      "created": 1634647746324,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_3d04ee85ff33464387b264abb4888f73",
+      "parentId": "wrk_0b26a54e055d4f52aab567ffd2dad6b9",
+      "modified": 1634647746166,
+      "created": 1634647746166,
+      "fileName": "NLW_07",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
