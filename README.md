@@ -21,6 +21,8 @@
 - [x] Valoriza - NLW 06 - Trilha NodeJS
 - [x] Letmeask - NLW 06 - Trilha React
 - [x] Gameplay - NLW 06 - Trilha React Native
+- [x] Heat - NLW 07
+- [x] Feedback - NLW 08/Return
 
 ### 🛠 Tecnologias
 
