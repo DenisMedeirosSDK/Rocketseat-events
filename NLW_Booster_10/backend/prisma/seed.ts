@@ -8,6 +8,7 @@ async function main() {
       name: 'John Doe',
       email: 'john@email.com',
       avatarUrl: 'https://github.com/DenisMedeirosSDK.png',
+      googleId: '1234567890',
     },
   });
 
@@ -27,20 +28,20 @@ async function main() {
 
   await prisma.game.create({
     data: {
-      date: '2022-11-01T14:00:57.484Z',
-      firstTeamCountryCode: 'DE',
-      secondTeamCountryCode: 'BR',
+      date: '2022-11-20T13:00:00.484Z',
+      firstTeamCountryCode: 'QAT',
+      secondTeamCountryCode: 'ECU',
     },
   });
   await prisma.game.create({
     data: {
-      date: '2022-11-03T14:00:57.484Z',
-      firstTeamCountryCode: 'AR',
-      secondTeamCountryCode: 'BR',
+      date: '2022-11-21T10:00:00.484Z',
+      firstTeamCountryCode: 'ENG',
+      secondTeamCountryCode: 'IRN',
 
       guesses: {
         create: {
-          firstTeamPoints: 2,
+          firstTeamPoints: 1,
           secondTeamPoints: 1,
 
           participant: {
