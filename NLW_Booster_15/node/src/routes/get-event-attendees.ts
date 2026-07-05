@@ -5,7 +5,7 @@ import { prisma } from "../lib/prisma";
 
 export async function getEventAttendees(app: FastifyInstance) {
 
-  app.withTypeProvider<ZodTypeProvider>().get('/evevnts/:eventId/attendees', {
+  app.withTypeProvider<ZodTypeProvider>().get('/events/:eventId/attendees', {
     schema: {
       params: z.object({
         eventId: z.string().uuid(),
@@ -24,7 +24,8 @@ export async function getEventAttendees(app: FastifyInstance) {
               createdAt: z.date(),
               checkedInAt: z.date().nullish(),
             })
-          )
+          ),
+          total: z.number().int()
         })
       }
     }
@@ -52,8 +53,8 @@ export async function getEventAttendees(app: FastifyInstance) {
       }
     })
 
-
-
+    const attendeesCount = await prisma.attendee.count()
+    
     return reply.status(200).send({
       attendees: attendees.map(attendee => {
         return {
@@ -63,7 +64,8 @@ export async function getEventAttendees(app: FastifyInstance) {
           createdAt: attendee.createdAt,
           checkedInAt: attendee.checkIn?.createdAt
         }
-      })
+      }),
+      total: attendeesCount
     })
   })
 }

@@ -8,7 +8,8 @@
     "build": "tsup src --format esm",
     "dev": "tsx watch --env-file .env src/server.ts",
     "db:migrate": "prisma migrate dev",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "db:seed": "prisma db seed"
   },
   "keywords": [],
   "author": "",
